@@ -1,0 +1,776 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Tangerine:wght@400;700&display=swap');
+
+
+
+/* ================= Logo ================= */
+.logo-subtitle {
+    font-size: 0.75rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-top: -6px;
+    text-align: center;
+}
+
+/* ================= Button ================= */
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #584f4f;
+    transform: translateY(-3px);
+}
+
+/* Portfolio button */
+.btn-product {
+    display: inline-block;
+    padding: 10px 24px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-product i {
+    margin-right: 8px;
+}
+
+.btn-product:hover {
+    background: white;
+    color: #584f4f;
+    transform: translateY(-2px);
+}
+
+/* ================= Hero ================= */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url("../image/hero.jpg") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 120px;
+   
+}
+
+
+
+.logo h1 {
+    font-family: 'CutieQueues', sans-serif; 
+    font-weight: normal;       
+    
+    letter-spacing: 2px;      
+    font-size: 2rem;      
+   
+}
+
+
+.hero-subtitle {
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+
+.hero-title {
+     font-family: "Reenie Beanie";
+     color: #ffe785;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    text-transform: none; 
+    letter-spacing:5px; 
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-indicator span {
+    display: block;
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 25px;
+    position: relative;
+}
+
+.scroll-indicator span::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% { top: 10px; opacity: 1; }
+    100% { top: 30px; opacity: 0; }
+}
+
+/* ================= Nav ================= */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(51, 45, 45, 0.761);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 30px;
+    height: 50px;
+    padding-top: 25px;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-left {
+    position: relative;
+}
+
+
+/* Burger */
+.nav-left button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+.logo-img {
+    max-height: 50px;   
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Right icons */
+.nav-right {
+    position: relative; 
+    right: 40px; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.nav-right a {
+    margin-left: 10px; 
+    margin-right: 10px;
+    color: aliceblue;
+}
+
+/* ================= hidden ================= */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: #f4cb79;
+    list-style: none;
+    padding: 100px 20px;
+    transform: translateX(-100%); 
+    opacity: 0;                
+    visibility: hidden;       
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 999;
+}
+
+.nav-menu li {
+    margin-bottom: 20px;
+}
+
+.nav-menu li a {
+    color: rgb(53, 42, 42);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #c9a14a;
+}
+
+
+.nav-menu.active {
+    transform: translateX(0); 
+    opacity: 1;              
+    visibility: visible;    
+}
+
+
+.nav-left button {
+    cursor: pointer;
+}
+
+
+
+/* ================= About me================= */
+.about {
+    padding: 120px 0;
+    color: azure;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    align-items: center; 
+    gap: 40px; 
+}
+
+
+.about-photo {
+    grid-column: 1; 
+    text-align: left;
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+
+.about-content {
+    grid-column: 2;
+    font-family: "Reenie Beanie";
+    font-size: 30px;
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+    .about-photo, .about-content {
+        grid-column: 1;
+    }
+    .about-content {
+        font-size: 28px;
+    }
+}
+
+/* ================= Port================= */
+
+
+#portfolio, 
+#portfolio h3, 
+#portfolio p, 
+#portfolio a, 
+#portfolio button {
+    font-family: 'Poppins', sans-serif;}
+.portfolio {
+  padding-bottom: 120px;
+    padding-top: 90px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.05s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.08);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    text-align: center;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* ================= Footer ================= */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: white;
+    color: #584f4f;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+}
+
+
+
+
+.footer-logo img {
+  width: 80px;         
+  transform: rotate(0deg); 
+  cursor: grab;
+}
+.footer-logo img:active {
+  cursor: grabbing;
+}
+
+
+
+/* ================= Subscript================= */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: white;
+    color: #584f4f;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+}
+
+
+
+.footer {
+    background: #483c3c;
+    color: white;
+    padding: 90px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+
+.subscribe-form {
+    flex: 1;
+    max-width: 400px;
+    padding-top: 70px;
+}
+
+.subscribe-form h4 {
+    font-family: "Reenie Beanie";
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.subscribe-form form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #584f4f;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-form button:hover {
+    opacity: 0.8;
+}
+
+/* policy */
+.footer-right {
+    flex: 1;
+    text-align: right;
+     font-family: 'Poppins', sans-serif;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #c9a14a;
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #c9a14a;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start;
+    gap: 60px;                
+    text-align: center;
+}
+
+
+.subscribe-form,
+.footer-right {
+    flex: 1;
+    max-width: 400px;
+}
+
+
+.footer-right {
+    text-align: center;
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ================= Body ================= */
+body {
+    padding-top: 120px;
+    background-color: black;
+}
+
+/* ================= mobile================= */
+@media (max-width: 768px) {
+    .about-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio {
+        padding: 80px 0;
+    }
+
+    .about {
+        padding: 80px 0;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+
+
+    /* ================= nav ================= */
+
+    .nav-wrapper {
+         transform: none !important;  
+         left: 0 !important;          
+    right: 0 !important;
+    margin: 0 auto;  
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        position: relative;
+        padding: 8px 10px; 
+    }
+
+
+    .logo {
+        position: relative;
+        left: 0;
+        transform: none;
+        text-align: center;
+    }
+
+  
+    .logo img.logo-img {
+        width: 85px;
+    }
+
+    .logo-subtitle {
+        display: none;
+    }
+
+
+    .nav-left {
+        position: absolute;
+        left: 5px; 
+    }
+
+    .nav-left button {
+        font-size: 24px;
+    }
+
+
+    .nav-right {
+        position: absolute;
+        right: 5px; 
+        display: flex;
+        gap: 8px;  
+    }
+
+    .nav-right a {
+        font-size: 16px;
+        margin-left: 0; 
+    }
+
+
+    .nav-menu {
+        width: 100%;
+        padding: 130px 10px; 
+    }
+}
+
+
+@media (max-width: 400px) {
+    .nav-wrapper, .logo, .nav-left, .nav-right {
+        transform: none !important;
+    }
+}
+
+   /* ================= Hero ================= */
+
+@media (max-width: 400px) {
+    .hero,
+    .hero .hero-content,
+    .hero .container {
+        width: 100% !important;     
+        max-width: 100% !important;  
+        margin: 0;                    
+        padding: 20px 10px;          
+        box-sizing: border-box;       
+        padding-top: 60px;   
+    padding-bottom: 40px; 
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    /* ================= About ================= */
+    .about-grid {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+ 
+    }
+
+    .about-content {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-photo img {
+        width: 90%;
+    }
+
+    /* ================= Port================= */
+    .portfolio-item {
+        height: 220px;
+    }
+
+    /* ================= Footer ================= */
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
