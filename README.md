@@ -1,35 +1,25 @@
-# Saruna Tattoo - Little Pond Studio Website
+# My Dreaming Collection
 
 ## Description
-Custom tattoo artistry portfolio website for Saruna Tattoo at Little Pond Studio.
-
-## Technologies Used
-- HTML5
-- CSS3 (Mobile-first responsive design)
-- JavaScript ES6+
+Handmade pottery collection showcasing whimsical, cute, and magical designs inspired by flowers, tiny creatures, and everyday moments.  
 
 ## JavaScript Libraries
-1. **Granim.js** - Animated gradient backgrounds
-2. **Glide.js** - Image slider/carousel
-3. **AOS** - Animate On Scroll library
-4. **Lightbox2** - Gallery lightbox functionality
+1. **Glide.js** - Image slider/carousel
+2. **AOS** - Animate On Scroll library
+3. **Lightbox2** - Gallery lightbox functionality
+4. **GSAP** - Scroll and animation effects
+5. **Anime.js** - Small animations for elements
 
 ## Features
 - Mobile-first responsive design
-- Instagram integration (@saruna_tattoo)
+- Instagram integration (@mydreamingcollection)
 - Portfolio gallery with lightbox
 - Smooth scroll animations
-- Contact/booking form
-- Interactive image slider
+- Contact form
+- Interactive product slider
 
-## Setup Instructions
-1. Clone or download the repository
-2. Open `index.html` in a web browser
-3. Or use a local server for better performance
 
 ## Contact
-- Instagram: [@saruna_tattoo](https://instagram.com/saruna_tattoo)
-- Location: Little Pond Studio
-
-## License
-© 2024 Saruna Tattoo. All rights reserved.
+- Instagram: [@mydreamingcollection](https://instagram.com/mydreamingcollection)
+- Email: mydreamingcollection@gmail.com
+- Location: Canada
